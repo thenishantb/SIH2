@@ -1,0 +1,39 @@
+name: fish_app
+description: "A Flutter app for fish identification."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # For running TensorFlow Lite models (the modern, official package)
+  tflite_flutter: ^0.10.4 
+
+  # For accessing the phone's camera for a live preview
+  camera: ^0.10.5+9 
+
+  # For local database storage (we'll use this in Phase 4)
+  sqflite: ^2.3.2
+  path_provider: ^2.1.2
+  path: ^1.9.0
+
+  # For Geotagging (Phase 4)
+  geolocator: ^11.0.0
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+
+  # Add your model and label files here
+  assets:
+    - assets/
